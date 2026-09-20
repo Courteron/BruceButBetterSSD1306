@@ -63,7 +63,7 @@ This is **not** a re-skin. It's a downstream fork built around one purpose-made 
 modules wired in on top of upstream Bruce.
 
 ### Purpose-built hardware target — `ESP-General`
-- **ESP32-S3 N16R8** (16 MB flash / 8 MB PSRAM), **1.3" SH1106 monochrome OLED** over I²C, dual USB-C.
+- **ESP32-S3 N16R8** (16 MB flash / 8 MB PSRAM), **0.96" SSD1306 monochrome OLED** over I²C, dual USB-C.
 - Fixed module loadout on a shared SPI/I²C backbone: **CC1101 + PN532 + 2× NRF24 + Si5351 + IR + SD**.
 - UI **tuned for 128×64 mono** (status bar / padding shrunk — upstream defaults assume colour TFTs).
 - **Trimmed** for the small build: GPS, LoRa, Ethernet and FM are compiled out (`-DDISABLE_*`).
@@ -172,7 +172,7 @@ esptool.py --chip <esp32|esp32s3> --port COMx write_flash 0x0 Bruce-<board>.bin
 | NRF24L01 ×2 | 2.4 GHz · MouseJack · jammer |
 | Si5351 | Signal generator 8 kHz–160 MHz |
 | MicroSD | File storage |
-| OLED 1.3" SH1106 (SSD1106G) | Display |
+| OLED 0.6" SSD1306 | Display |
 | VS1838B | IR receiver 38 kHz |
 | IR LED + 2N2222 | IR transmitter |
 | Passive buzzer | Sound |
